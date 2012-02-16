@@ -21,14 +21,11 @@ Benefits two sides:
 
 1. Include crop5.js to page.
 2. Add this line of js:
-
 ```
 $.('#canvas_element_id').crop5();
 ```
-
 3. Do cropping
 4. Get data
-
 ```
 $.('#canvas_element_id').crop5('get');
 ```
