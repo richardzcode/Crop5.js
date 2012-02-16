@@ -1,0 +1,22 @@
+<html>
+<head><title>HTML5 Crop</title></head>
+<body>
+  <canvas id="cropcan" width="500" height="400"></canvas>
+  <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+  <input type="file" name="imagePicker"/>
+  </form>
+  <input type="button" id="testGet" value="Get Data"/>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="/crop5.js"></script>
+  <script type="text/javascript">
+    (function() {
+      $('#cropcan').crop5({fileSelector: '#uploadForm input[name=imagePicker]'});
+
+      $('#testGet').click(function() {
+        console.log($('#cropcan').crop5('get'));
+      });
+    })();
+  </script>
+</body>
+</html>
+ 
