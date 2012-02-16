@@ -30,7 +30,6 @@ $.('#canvas_element_id').crop5();
 $.('#canvas_element_id').crop5('get');
 ```
 
-Return
 ## Options
 
 * fileSelector: The file input for choosing image file. If empty then a new file input would be created.
